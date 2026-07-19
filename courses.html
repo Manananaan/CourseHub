@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses — CourseHub</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap">
+    <a href="index.html" class="logo"><img src="images/favicon.svg" alt="CourseHub logo">CourseHub</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html" class="current">Courses</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="signin.html" class="btn btn-ghost">Sign in</a>
+      <a href="#course-list" class="btn btn-accent">Browse Courses</a>
+    </div>
+
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">All courses</span>
+      <h1>Every track, in one place</h1>
+      <p>Filter by level to find your starting point — every track ends with a real project for your portfolio.</p>
+    </div>
+  </section>
+
+  <section id="course-list">
+    <div class="wrap">
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-level="all">All courses</button>
+        <button class="filter-btn" data-level="beginner">Beginner</button>
+        <button class="filter-btn" data-level="intermediate">Intermediate</button>
+        <button class="filter-btn" data-level="advanced">Advanced</button>
+      </div>
+
+      <div class="course-grid" id="course-grid"></div>
+    </div>
+  </section>
+
+  <section class="bg-soft">
+    <div class="wrap">
+      <div class="cta-banner reveal">
+        <div>
+          <h2>Not sure where to start?</h2>
+          <p>Take the Beginner track in Web Development — it's free, and it's the foundation everything else builds on.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="signin.html" class="btn btn-light">Create free account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="images/favicon.svg" alt="">CourseHub</div>
+        <p style="color:rgba(255,255,255,0.6); margin-top:14px; max-width:280px;">Practical, project-based courses for people who want to build, not just watch.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">gh</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="index.html#roadmap">Roadmap</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signin.html">Sign in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CourseHub · Digital Egypt Cubs · iSchool</span>
+      <span>Made for learners who ship.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

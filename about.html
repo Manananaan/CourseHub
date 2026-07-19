@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — CourseHub</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap">
+    <a href="index.html" class="logo"><img src="images/favicon.svg" alt="CourseHub logo">CourseHub</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="about.html" class="current">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="signin.html" class="btn btn-ghost">Sign in</a>
+      <a href="courses.html" class="btn btn-accent">Browse Courses</a>
+    </div>
+
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">About CourseHub</span>
+      <h1>We teach by building, not by lecturing</h1>
+      <p>CourseHub started as a small internal training program and grew into a project-based platform for people who learn best by shipping real things.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;">
+      <div class="reveal">
+        <span class="eyebrow">Our story</span>
+        <h2 style="font-size:2rem;">From a training room to a full platform</h2>
+        <p style="margin-top:16px;">CourseHub began as an internal bootcamp for a small team who wanted a faster way to onboard new developers. The project-first format worked so well that we opened it up — first to a handful of learners, now to thousands.</p>
+        <p style="margin-top:14px;">Every track is still written and reviewed by working developers and designers, not just recorded once and left untouched.</p>
+      </div>
+      <div class="reveal">
+        <img src="images/about-illustration.svg" alt="Illustration of course cards and dashboards">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-soft">
+    <div class="wrap">
+      <div class="stats-row">
+        <div class="stat-card reveal"><strong data-count="24">0</strong><span>Active tracks</span></div>
+        <div class="stat-card reveal"><strong data-count="6.2" data-suffix="k">0</strong><span>Learners</span></div>
+        <div class="stat-card reveal"><strong data-count="92" data-suffix="%">0</strong><span>Completion rate</span></div>
+        <div class="stat-card reveal"><strong data-count="4" data-suffix="yrs">0</strong><span>Teaching online</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head center reveal" style="margin-left:auto; margin-right:auto;">
+        <span class="eyebrow">Our team</span>
+        <h2>The people behind the tracks</h2>
+        <p>A small team of instructors and engineers who review every project submission themselves.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <img src="images/avatar-1.svg" alt="">
+          <h3>Nour Hassan</h3>
+          <span>Lead Frontend Instructor</span>
+          <p>Writes the HTML, CSS, and JavaScript tracks and reviews every beginner project.</p>
+        </div>
+        <div class="team-card reveal">
+          <img src="images/avatar-2.svg" alt="">
+          <h3>Karim Adel</h3>
+          <span>Product & Design Lead</span>
+          <p>Designs the UI/UX track and keeps the course platform itself a teaching example.</p>
+        </div>
+        <div class="team-card reveal">
+          <img src="images/avatar-3.svg" alt="">
+          <h3>Salma Youssef</h3>
+          <span>React & JavaScript Instructor</span>
+          <p>Leads the intermediate and advanced tracks, from state management to animation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-soft">
+    <div class="wrap">
+      <div class="cta-banner reveal">
+        <div>
+          <h2>Want to learn with us?</h2>
+          <p>Create a free account and start your first project today.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="signin.html" class="btn btn-light">Create free account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="images/favicon.svg" alt="">CourseHub</div>
+        <p style="color:rgba(255,255,255,0.6); margin-top:14px; max-width:280px;">Practical, project-based courses for people who want to build, not just watch.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">gh</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="index.html#roadmap">Roadmap</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signin.html">Sign in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CourseHub · Digital Egypt Cubs · iSchool</span>
+      <span>Made for learners who ship.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

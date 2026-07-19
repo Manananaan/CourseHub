@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — CourseHub</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap">
+    <a href="index.html" class="logo"><img src="images/favicon.svg" alt="CourseHub logo">CourseHub</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="current">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="signin.html" class="btn btn-ghost">Sign in</a>
+      <a href="courses.html" class="btn btn-accent">Browse Courses</a>
+    </div>
+
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Questions about a track? Ask us directly</h1>
+      <p>Whether you're stuck on a project or curious about a track before you start, our team replies within one business day.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap contact-grid">
+      <div class="contact-info-card reveal">
+        <h3>Contact information</h3>
+        <p>Reach out any time — instructors, not bots, read every message.</p>
+
+        <div class="contact-item">
+          <div class="ci-icon">✉</div>
+          <div><strong>Email</strong><span>hello@coursehub.example</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">☎</div>
+          <div><strong>Phone</strong><span>+20 100 000 0000</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">⌂</div>
+          <div><strong>Location</strong><span>Cairo, Egypt</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">◷</div>
+          <div><strong>Support hours</strong><span>Sun – Thu, 10am – 6pm</span></div>
+        </div>
+      </div>
+
+      <div class="contact-form-card reveal">
+        <form id="contact-form">
+          <div class="field-grid">
+            <div class="field">
+              <label for="c-name">Full name</label>
+              <input id="c-name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="c-email">Email</label>
+              <input id="c-email" type="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="c-subject">Subject</label>
+            <input id="c-subject" type="text" placeholder="What's this about?" required>
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" placeholder="Tell us a bit more…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent btn-block">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="images/favicon.svg" alt="">CourseHub</div>
+        <p style="color:rgba(255,255,255,0.6); margin-top:14px; max-width:280px;">Practical, project-based courses for people who want to build, not just watch.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">gh</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="index.html#roadmap">Roadmap</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signin.html">Sign in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CourseHub · Digital Egypt Cubs · iSchool</span>
+      <span>Made for learners who ship.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

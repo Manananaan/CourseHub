@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in — CourseHub</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap">
+    <a href="index.html" class="logo"><img src="images/favicon.svg" alt="CourseHub logo">CourseHub</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="signin.html" class="btn btn-ghost current" style="color:var(--purple); border-color:var(--purple);">Sign in</a>
+    </div>
+
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+  </nav>
+</header>
+
+<main>
+  <div class="auth-shell">
+
+    <div class="auth-visual">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.14); color:#fff;">Welcome back</span>
+      <h2>Pick up your track right where you left off.</h2>
+      <p>Your progress, projects, and feedback are all waiting for you.</p>
+      <img src="images/hero-illustration.svg" alt="Illustration of a learner working on a laptop">
+    </div>
+
+    <div class="auth-form-side">
+      <div class="auth-card">
+        <span class="eyebrow">Sign in</span>
+        <h1>Welcome back</h1>
+        <p>Enter your details to continue your learning track.</p>
+
+        <form id="signin-form">
+          <div class="field">
+            <label for="s-email">Email</label>
+            <input id="s-email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="s-password">Password</label>
+            <input id="s-password" type="password" placeholder="••••••••" required>
+          </div>
+
+          <div class="field-row">
+            <label class="checkbox-row"><input type="checkbox">Remember me</label>
+            <a href="#" class="link-accent">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-block">Sign in</button>
+        </form>
+
+        <div class="divider">or continue with</div>
+
+        <div class="social-row">
+          <button class="btn btn-social">Google</button>
+          <button class="btn btn-social">GitHub</button>
+        </div>
+
+        <p class="auth-switch">Don't have an account? <a href="#" class="link-accent">Sign up free</a></p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

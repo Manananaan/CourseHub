@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CourseHub — Learn Skills. Build Future.</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap">
+    <a href="index.html" class="logo"><img src="images/favicon.svg" alt="CourseHub logo">CourseHub</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="current">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="signin.html" class="btn btn-ghost">Sign in</a>
+      <a href="courses.html" class="btn btn-accent">Browse Courses</a>
+    </div>
+
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="blob blob-purple"></span>
+    <span class="blob blob-green"></span>
+    <span class="pattern-layer"></span>
+
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow">Digital Egypt Cubs · iSchool</span>
+        <h1>Learn skills.<br><span class="accent gradient-text">Build</span> your future.</h1>
+        <p class="lede">Practical web development tracks built around real projects — from semantic HTML to interactive interfaces you can actually ship.</p>
+        <div class="hero-actions">
+          <a href="courses.html" class="btn btn-accent">Browse Courses</a>
+          <a href="signin.html" class="btn btn-ghost">Sign Up Free</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-frame">
+          <img src="images/hero-illustration.svg" alt="Illustration of a learner working on a laptop">
+          <div class="glass-panel">
+            <h3>Your learning, in progress</h3>
+            <p>Structured tracks, real feedback, steady momentum.</p>
+            <div class="glass-stat">
+              <div><strong data-count="24">0</strong><span>Active tracks</span></div>
+              <div><strong data-count="6.2" data-suffix="k">0</strong><span>Learners</span></div>
+              <div><strong data-count="92" data-suffix="%">0</strong><span>Completion</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY COURSEHUB -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why CourseHub</span>
+        <h2>Built for people who want to build</h2>
+        <p>Every track is designed around one idea: the fastest way to learn is to make something real.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">◆</div>
+          <h3>Project-based</h3>
+          <p>Every lesson ends with something you ship, not just a quiz.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">↻</div>
+          <h3>Self-paced</h3>
+          <p>Learn on your schedule — pause, rewind, and pick up anytime.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">✓</div>
+          <h3>Reviewed work</h3>
+          <p>Get real feedback from instructors, not just automated checks.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">↗</div>
+          <h3>Portfolio-ready</h3>
+          <p>Graduate with projects you can actually show employers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap" class="bg-soft">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>Your roadmap, step by step</h2>
+        <p>Every track follows the same clear path, so you always know what's next.</p>
+      </div>
+
+      <ol class="roadmap">
+        <li class="road-step reveal">
+          <span class="road-badge">1</span>
+          <div class="road-card">
+            <h3>Pick a track</h3>
+            <p>Choose a path that matches your goal — frontend, JavaScript, or full-stack.</p>
+          </div>
+        </li>
+        <li class="road-step reveal">
+          <span class="road-badge">2</span>
+          <div class="road-card">
+            <h3>Build real projects</h3>
+            <p>Each lesson ends with something you actually ship, not just watch.</p>
+          </div>
+        </li>
+        <li class="road-step reveal">
+          <span class="road-badge">3</span>
+          <div class="road-card">
+            <h3>Get reviewed</h3>
+            <p>Instructors and peers review your work and point out what to improve.</p>
+          </div>
+        </li>
+        <li class="road-step reveal">
+          <span class="road-badge">4</span>
+          <div class="road-card">
+            <h3>Launch your portfolio</h3>
+            <p>Graduate with a portfolio of projects ready to show employers.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Featured courses</span>
+        <h2>Start with a course that fits you</h2>
+        <p>Filter by level to find the right starting point.</p>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-level="all">All courses</button>
+        <button class="filter-btn" data-level="beginner">Beginner</button>
+        <button class="filter-btn" data-level="intermediate">Intermediate</button>
+        <button class="filter-btn" data-level="advanced">Advanced</button>
+      </div>
+
+      <div class="course-grid" id="course-grid"></div>
+
+      <div style="text-align:center; margin-top:40px;">
+        <a href="courses.html" class="btn btn-ghost">View all courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE SLIDER -->
+  <section class="bg-soft">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Meet the tracks</span>
+        <h2>Swipe through what you'll build</h2>
+        <p>A horizontally scrolling, snap-to-slide preview of the flagship tracks.</p>
+      </div>
+
+      <div class="slider-shell reveal">
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <div class="slide-visual"><img src="images/course-html-css.svg" alt=""></div>
+            <div>
+              <h3>HTML &amp; CSS Foundations</h3>
+              <p>Semantic structure, layout, and styling fundamentals — the base every other track builds on.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-visual"><img src="images/course-js.svg" alt=""></div>
+            <div>
+              <h3>JavaScript Basics</h3>
+              <p>Variables, functions, and logic — learn to make a page think and react.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-visual"><img src="images/course-react.svg" alt=""></div>
+            <div>
+              <h3>React Fundamentals</h3>
+              <p>Components, state, and props — build interactive interfaces the modern way.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head center reveal" style="margin-left:auto; margin-right:auto;">
+        <span class="eyebrow">Learner stories</span>
+        <h2>People who built something real</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal">
+          <p class="testimonial-quote">The project-based approach meant I had a real portfolio piece after every track, not just notes.</p>
+          <div class="testimonial-person">
+            <img src="images/avatar-1.svg" alt="">
+            <div><strong>Nour Hassan</strong><span>Frontend Developer</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <p class="testimonial-quote">Feedback from real instructors made the difference — I finally understood why my CSS was breaking.</p>
+          <div class="testimonial-person">
+            <img src="images/avatar-2.svg" alt="">
+            <div><strong>Karim Adel</strong><span>UI Engineer</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <p class="testimonial-quote">Self-paced but never aimless — the roadmap always told me exactly what to do next.</p>
+          <div class="testimonial-person">
+            <img src="images/avatar-3.svg" alt="">
+            <div><strong>Salma Youssef</strong><span>Junior Web Developer</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSOLE / DATA DEMO -->
+  <section class="bg-soft">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Under the hood</span>
+        <h2>Course data, grouped and logged</h2>
+        <p>The grid above is rendered from one array of course objects. Open your browser console (F12) to see it grouped and printed.</p>
+      </div>
+      <div class="console-box reveal" id="console-preview">
+        <span class="c-dim">// open devtools console to see the full output</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Good to know</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <details open>
+          <summary>Do I need any prior experience?</summary>
+          <p>No. The Beginner tracks start from zero and assume no coding background at all.</p>
+        </details>
+        <details>
+          <summary>Are the courses self-paced?</summary>
+          <p>Yes — every track is fully self-paced, with lessons and projects available any time.</p>
+        </details>
+        <details>
+          <summary>Do I get a certificate?</summary>
+          <p>Completing a track gives you a shareable certificate and a portfolio-ready project.</p>
+        </details>
+        <details>
+          <summary>Can I switch tracks later?</summary>
+          <p>Absolutely. Your progress is saved per track, so you can switch or add tracks any time.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section>
+    <div class="wrap">
+      <div class="cta-banner reveal">
+        <div>
+          <h2>Ready to build your first project?</h2>
+          <p>Create a free account and start the first lesson of any beginner track today.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="signin.html" class="btn btn-light">Create free account</a>
+          <a href="courses.html" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.4); color:#fff;">Browse courses</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="images/favicon.svg" alt="">CourseHub</div>
+        <p style="color:rgba(255,255,255,0.6); margin-top:14px; max-width:280px;">Practical, project-based courses for people who want to build, not just watch.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">gh</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="index.html#roadmap">Roadmap</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signin.html">Sign in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CourseHub · Digital Egypt Cubs · iSchool</span>
+      <span>Made for learners who ship.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
